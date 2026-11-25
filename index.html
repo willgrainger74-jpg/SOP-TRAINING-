@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#080808">
+<meta name="robots" content="noindex">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="AG Training">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Action Group Training</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css?v=4">
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+</head>
+<body>
+<div class="page hide" id="shell">
+  <header class="top">
+    <img src="ag-logo.png" alt="The Action Group">
+    <div class="top-t"><h1>ACTION GROUP <em>TRAINING</em></h1><p>Installation SOPs · Tactical training for the trades</p></div>
+    <div class="top-r">
+      <div class="who" id="who"></div>
+      <div style="display:flex;gap:6px"><button class="pill" data-act="theme">Light / Dark</button><button class="pill" data-act="signout">Sign out</button></div>
+    </div>
+  </header>
+  <main id="view"></main>
+</div>
+<nav class="tabbar hide" id="tabbar">
+  <a href="#/" data-tab="home"><span>▦</span>Modules</a>
+  <a href="#/me" data-tab="me"><span>✓</span>My Progress</a>
+  <a href="#/manager" data-tab="manager"><span>⚙</span>Manager</a>
+</nav>
+<script src="sop-shared.js?v=4"></script>
+<script src="sop-core.js?v=4"></script>
+<script src="sop-hvac.js?v=4"></script>
+<script src="sop-waterheaters.js?v=4"></script>
+<script src="sop-plumbing.js?v=4"></script>
+<script src="art.js?v=4"></script>
+<script src="app.js?v=4"></script>
+</body>
+</html>
